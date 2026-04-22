@@ -1,5 +1,13 @@
 name: Hello world
-on: push
+on: 
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+      - feature
 
 jobs:
   Build:
